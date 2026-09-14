@@ -63,14 +63,12 @@ export default function Navbar() {
           <img
             src="/logob+.png"
             alt="Rafting Elo Logo"
-            className={`h-8 w-auto object-contain transition-all duration-300 ${
-              isOverDarkSection ? "brightness-0 invert" : "brightness-0"
-            }`}
+            className={`h-11 w-auto object-contain transition-all duration-300 ${isOverDarkSection ? "brightness-0 invert" : "brightness-0"
+              }`}
           />
           <span
-            className={`hidden text-xs font-black uppercase leading-tight tracking-tight sm:block transition-colors duration-300 ${
-              isOverDarkSection ? "text-white" : "text-[#0b192c]"
-            }`}
+            className={`hidden text-xm font-black uppercase leading-tight tracking-tight sm:block transition-colors duration-300 ${isOverDarkSection ? "text-white" : "text-[#0b192c]"
+              }`}
           >
             Rafting Elo
           </span>
@@ -84,7 +82,7 @@ export default function Navbar() {
         {/* Right Actions */}
         <div className="flex items-center gap-2">
           <a
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20bertanya%20informasi%20dan%20reservasi%20paket%20arung%20jeram."
             target="_blank"
             rel="noopener noreferrer"
             className="hidden items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1eb956] px-4 py-2 text-xs sm:text-sm font-bold text-white transition sm:flex shadow-lg"
@@ -123,7 +121,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20bertanya%20informasi%20dan%20reservasi%20paket%20arung%20jeram."
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-center text-sm font-bold text-white shadow-lg"

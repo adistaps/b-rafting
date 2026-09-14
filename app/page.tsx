@@ -30,10 +30,10 @@ export default function Page() {
         <TripFlow />
         <BookingSteps />
         <Gallery />
-        <Testimonials />
+        <Maps />
         <FAQ />
         <Terms />
-        <Maps />
+        <Testimonials />
         <CTASection />
       </main>
       <Footer />

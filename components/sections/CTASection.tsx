@@ -33,13 +33,19 @@ export default function CTASection() {
                     </p>
 
                     <div className="mt-8 flex items-center gap-4">
-                        <Button
-                            size="lg"
-                            className="rounded-none bg-black text-white hover:bg-neutral-800 font-bold uppercase tracking-wider text-xs px-8 py-6 transition-all shadow-xl"
+                        <a
+                            href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20cek%20ketersediaan%20tanggal%20dan%20booking%20paket%20rafting."
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            Booking Sekarang
-                            <ArrowRight className="ml-2 h-4 w-4" />
-                        </Button>
+                            <Button
+                                size="lg"
+                                className="rounded-none bg-black text-white hover:bg-neutral-800 font-bold uppercase tracking-wider text-xs px-8 py-6 transition-all shadow-xl"
+                            >
+                                Booking Sekarang
+                                <ArrowRight className="ml-2 h-4 w-4" />
+                            </Button>
+                        </a>
                     </div>
                 </div>
 

@@ -73,7 +73,7 @@ export default function Hero() {
                     <img
                         src="logo.png"
                         alt="Logo"
-                        className="h-24 sm:h-64 md:h-80 lg:h-96 w-auto object-contain mx-auto mb-2 brightness-0 invert drop-shadow-[0_10px_25px_rgba(0,0,0,0.9)]"
+                        className="h-36 sm:h-64 md:h-80 lg:h-96 w-auto object-contain mx-auto mb-2 brightness-0 invert drop-shadow-[0_10px_25px_rgba(0,0,0,0.9)]"
                         onError={(e) => {
                             e.currentTarget.style.display = 'none';
                             const parent = e.currentTarget.parentElement;

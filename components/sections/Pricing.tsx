@@ -162,7 +162,9 @@ export default function Pricing() {
                                 {/* Bottom CTA Link (Tipe Box Kotak Tajam) */}
                                 <div className="mt-6 border-t border-white/10 pt-4">
                                     <a
-                                        href="#"
+                                        href={`https://wa.me/6285643671469?text=${encodeURIComponent(`Halo Admin Elo Rafting, saya berminat untuk booking *${item.name}* (${item.price} ${item.details}). Mohon informasi ketersediaan slot tanggal.`)}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="flex w-full items-center justify-between border border-white/20 bg-white/5 px-4 py-3 text-xs font-bold uppercase tracking-wider text-white transition-all group-hover:border-[#ccff00] group-hover:bg-[#ccff00] group-hover:text-black"
                                     >
                                         <span>Booking Paket Ini</span>
