@@ -3,17 +3,17 @@ import { Button } from "@/components/ui/button"
 
 export default function CTASection() {
     return (
-        <section className="w-full border-t border-b border-[#bcee00] bg-[#ccff00] overflow-hidden">
+        <section className="w-full bg-[#ccff00] overflow-hidden">
 
             {/* Grid Full Width (Edge-to-Edge) */}
             <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-[500px]">
 
                 {/* Kolom Kiri: Foto Full Height */}
-                <div className="relative min-h-[350px] lg:min-h-full w-full overflow-hidden border-b lg:border-b-0 lg:border-r border-[#bcee00]">
+                <div className="relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-full w-full overflow-hidden border-b lg:border-b-0 lg:border-r border-[#bcee00]">
                     <img
                         src="/images/rafting-3.webp"
                         alt="Rafting Sungai Elo"
-                        className="h-full w-full object-cover object-center grayscale contrast-125 transition-transform duration-700 hover:scale-105"
+                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
                     />
                 </div>
 

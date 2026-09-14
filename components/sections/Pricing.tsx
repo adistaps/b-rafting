@@ -55,13 +55,13 @@ export default function Pricing() {
         <section id="paket" className="relative w-full overflow-hidden bg-black py-16 text-white select-none">
             {/* Background Photo */}
             <img
-                src="/images/rafting-6.webp"
+                src="/images/rafting-4.webp"
                 alt="Rafting Action"
-                className="absolute inset-0 h-full w-full object-cover opacity-40 pointer-events-none"
+                className="absolute inset-0 h-full w-full object-cover opacity-80 pointer-events-none"
             />
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/80 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/30 pointer-events-none" />
 
             <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-8 lg:px-12">
                 {/* Header Section */}
@@ -111,8 +111,8 @@ export default function Pricing() {
                             <article
                                 key={item.name}
                                 className={`group relative flex min-w-[280px] max-w-[320px] lg:max-w-none lg:min-w-0 flex-none snap-start flex-col justify-between border p-5 sm:p-6 backdrop-blur-md transition-all duration-300 ${item.isPopular
-                                        ? "border-[#ccff00] bg-white/15"
-                                        : "border-white/20 bg-white/10 hover:border-white/40 hover:bg-white/15"
+                                    ? "border-[#ccff00] bg-white/15"
+                                    : "border-white/20 bg-white/10 hover:border-white/40 hover:bg-white/15"
                                     }`}
                             >
                                 {/* Top-Right Accent Square Badge (Tetap Tajam / No Rounded) */}

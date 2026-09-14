@@ -38,7 +38,6 @@ export default function Page() {
         <CTASection />
       </main>
       <Footer />
-
       <FloatingWhatsApp />
     </>
   )
