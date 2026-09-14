@@ -14,7 +14,7 @@ import Terms from "@/components/sections/Terms"
 import Maps from "@/components/sections/Maps"
 import CTASection from "@/components/sections/CTASection"
 import Footer from "@/components/sections/Footer"
-import StickyBookingBar from "@/components/sections/StickyBookingBar"
+
 import FloatingWhatsApp from "@/components/sections/FloatingWhatsApp"
 
 export default function Page() {
@@ -38,7 +38,7 @@ export default function Page() {
         <CTASection />
       </main>
       <Footer />
-      <StickyBookingBar />
+
       <FloatingWhatsApp />
     </>
   )
