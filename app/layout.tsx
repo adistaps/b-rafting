@@ -11,7 +11,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
   display: 'swap',
 })
 
-const siteUrl = 'https://elorafting.vercel.app'
+const siteUrl = 'https://elorafting.id'
 const siteName = 'Rafting Elo Magelang'
 const siteDescription =
   'Arung jeram terbaik dan termurah di Magelang. Rafting Sungai Elo cocok untuk wisata keluarga, komunitas, dan company gathering dekat Borobudur. Harga mulai Rp650.000/boat. Rekomendasi destinasi main di Magelang!'
@@ -139,7 +139,7 @@ const jsonLd = {
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
           opens: '07:00',
           closes: '17:00',
         },
@@ -202,4 +202,3 @@ export default function RootLayout({
     </html>
   )
 }
-
