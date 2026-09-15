@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Globe2, MessageCircle, Play, Music2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -24,9 +25,12 @@ export default function Footer() {
 
                         {/* Content Top */}
                         <div className="relative z-10 flex items-center gap-3">
-                            <img
+                            <Image
                                 src="/logob+.png"
-                                alt="Rafting Elo Logo"
+                                alt="Rafting Elo Magelang Logo"
+                                width={120}
+                                height={36}
+                                loading="lazy"
                                 className="h-9 w-auto object-contain brightness-0"
                             />
                             <span className="font-bold text-lg tracking-wider uppercase text-black">Rafting Elo</span>
@@ -101,7 +105,7 @@ export default function Footer() {
                                     <li><a href="#" className="hover:text-neutral-900 transition-colors">Instagram</a></li>
                                     <li><a href="#" className="hover:text-neutral-900 transition-colors">TikTok</a></li>
                                     <li><a href="#" className="hover:text-neutral-900 transition-colors">YouTube</a></li>
-                                    <li><a href="#" className="hover:text-neutral-900 transition-colors">WhatsApp</a></li>
+                                    <li><a href="https://wa.me/6285159771469" target="_blank" rel="noopener noreferrer" className="hover:text-neutral-900 transition-colors">WhatsApp</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -118,23 +118,24 @@ const jsonLd = {
       name: 'Rafting Elo Magelang',
       description: siteDescription,
       url: siteUrl,
-      telephone: '+6285643671469',
-      priceRange: 'Rp650.000 – Rp1.200.000',
+      telephone: '+6285159771469',
+      priceRange: 'Rp650.000',
       currenciesAccepted: 'IDR',
       paymentAccepted: 'Cash, Transfer Bank',
       image: `${siteUrl}/images/rafting-1.webp`,
       logo: `${siteUrl}/logob+.png`,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Sungai Elo',
+        streetAddress: 'Desa Pare, Kranggan, Sudiropaten, Kec. Secang',
         addressLocality: 'Magelang',
         addressRegion: 'Jawa Tengah',
+        postalCode: '56152',
         addressCountry: 'ID',
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: -7.4798,
-        longitude: 110.2174,
+        latitude: -7.4812,
+        longitude: 110.2185,
       },
       openingHoursSpecification: [
         {
@@ -145,7 +146,7 @@ const jsonLd = {
         },
       ],
       sameAs: [
-        `https://wa.me/6285643671469`,
+        `https://wa.me/6285159771469`,
       ],
     },
     {

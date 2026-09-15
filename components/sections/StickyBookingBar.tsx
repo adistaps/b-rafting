@@ -2,7 +2,7 @@ export default function StickyBookingBar() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 flex items-center justify-center border-t border-neutral-200 bg-white/95 px-5 py-3 backdrop-blur-md md:hidden">
       <a
-        href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting%2C%20saya%20ingin%20booking%20paket%20rafting.%20Mohon%20informasi%20ketersediaan%20dan%20harga%20terbaru."
+        href="https://wa.me/6285159771469?text=Halo%20Admin%20Elo%20Rafting%2C%20saya%20ingin%20booking%20paket%20rafting.%20Mohon%20informasi%20ketersediaan%20dan%20harga%20terbaru."
         target="_blank"
         rel="noopener noreferrer"
         className="flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1eb956] active:bg-[#1aaa4f] px-5 py-3 text-sm font-bold text-white shadow-md transition-colors"

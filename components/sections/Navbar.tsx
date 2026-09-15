@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { SlideTabs } from "@/components/ui/slide-tabs"
@@ -60,9 +61,12 @@ export default function Navbar() {
           href="#hero"
           className="flex items-center gap-2.5 py-1.5 transition-all hover:opacity-80"
         >
-          <img
+          <Image
             src="/logob+.png"
             alt="Rafting Elo Logo"
+            width={140}
+            height={44}
+            priority
             className={`h-11 w-auto object-contain transition-all duration-300 ${isOverDarkSection ? "brightness-0 invert" : "brightness-0"
               }`}
           />
@@ -82,7 +86,7 @@ export default function Navbar() {
         {/* Right Actions */}
         <div className="flex items-center gap-2">
           <a
-            href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20bertanya%20informasi%20dan%20reservasi%20paket%20arung%20jeram."
+            href="https://wa.me/6285159771469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20bertanya%20informasi%20dan%20reservasi%20paket%20arung%20jeram."
             target="_blank"
             rel="noopener noreferrer"
             className="hidden items-center gap-2 rounded-full bg-[#25D366] hover:bg-[#1eb956] px-4 py-2 text-xs sm:text-sm font-bold text-white transition sm:flex shadow-lg"
@@ -121,7 +125,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20bertanya%20informasi%20dan%20reservasi%20paket%20arung%20jeram."
+            href="https://wa.me/6285159771469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20bertanya%20informasi%20dan%20reservasi%20paket%20arung%20jeram."
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-center text-sm font-bold text-white shadow-lg"

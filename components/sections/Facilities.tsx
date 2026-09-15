@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { LucideIcon, BedDouble, Building2, Coffee, Landmark, MapPin, Shirt, ShowerHead, Store } from "lucide-react"
 
 interface FacilityItem {
@@ -85,10 +86,13 @@ export default function Facilities() {
                                 key={item.title}
                                 className="group relative h-[220px] sm:h-[280px] w-full overflow-hidden bg-black p-4 sm:p-8 flex flex-col justify-between border-b border-r border-neutral-800"
                             >
-                                <img
+                                <Image
                                     src={item.img}
-                                    alt={item.title}
-                                    className="absolute inset-0 h-full w-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
+                                    alt={`Fasilitas ${item.title} Rafting Elo Magelang`}
+                                    fill
+                                    sizes="(max-width: 640px) 50vw, 25vw"
+                                    loading="lazy"
+                                    className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/60 pointer-events-none" />
 

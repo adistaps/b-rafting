@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -10,10 +11,13 @@ export default function CTASection() {
 
                 {/* Kolom Kiri: Foto Full Height */}
                 <div className="relative h-[300px] sm:h-[400px] lg:h-auto lg:min-h-full w-full overflow-hidden border-b lg:border-b-0 lg:border-r border-[#bcee00]">
-                    <img
+                    <Image
                         src="/images/rafting-3.webp"
-                        alt="Rafting Sungai Elo"
-                        className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                        alt="Wisata Arung Jeram Sungai Elo Magelang - Reservasi dan Booking"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        loading="lazy"
+                        className="object-cover object-center transition-transform duration-700 hover:scale-105"
                     />
                 </div>
 
@@ -34,7 +38,7 @@ export default function CTASection() {
 
                     <div className="mt-8 flex items-center gap-4">
                         <a
-                            href="https://wa.me/6285643671469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20cek%20ketersediaan%20tanggal%20dan%20booking%20paket%20rafting."
+                            href="https://wa.me/6285159771469?text=Halo%20Admin%20Elo%20Rafting,%20saya%20ingin%20cek%20ketersediaan%20tanggal%20dan%20booking%20paket%20rafting."
                             target="_blank"
                             rel="noopener noreferrer"
                         >

@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import {
     ArrowDownRight,
     Check,
@@ -47,6 +48,7 @@ const CARDS_DATA = [
 
 export default function Hero() {
     const [activeBgIndex, setActiveBgIndex] = useState(0);
+    const [logoError, setLogoError] = useState(false);
 
     const heroBackgrounds = [
         "/images/rafting-5.webp",
@@ -56,35 +58,44 @@ export default function Hero() {
     return (
         <section id="hero" className="w-full bg-[#0d0d0d] text-white font-sans overflow-hidden select-none">
 
+            {/* SEO: H1 tersembunyi secara visual — tidak mengubah tampilan, tapi memberi sinyal topik utama halaman ke Google */}
+            <h1 className="sr-only">
+                Rafting Elo Magelang — Arung Jeram Terbaik dan Termurah Dekat Borobudur
+            </h1>
+
             {/* ==========================================
             TOP HERO BANNER
             ========================================== */}
             <div className="relative min-h-[45vh] sm:min-h-[85vh] lg:min-h-[88vh] flex flex-col justify-between items-center px-4 pt-12 sm:pt-28 pb-6 border-b border-white/10">
                 <div className="absolute inset-0 z-0">
-                    <img
+                    <Image
                         src={heroBackgrounds[activeBgIndex]}
                         alt="Rafting Background"
-                        className="w-full h-full object-cover object-center transition-all duration-700 brightness-90 contrast-[1.05]"
+                        fill
+                        priority
+                        fetchPriority="high"
+                        sizes="100vw"
+                        className="object-cover object-center transition-all duration-700 brightness-90 contrast-[1.05]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d0d] via-black/20 to-black/40" />
                 </div>
 
                 <div className="relative z-10 max-w-4xl mx-auto text-center px-4 my-auto py-4 flex flex-col items-center">
-                    <img
-                        src="logo.png"
-                        alt="Logo"
-                        className="h-36 sm:h-64 md:h-80 lg:h-96 w-auto object-contain mx-auto mb-2 brightness-0 invert drop-shadow-[0_10px_25px_rgba(0,0,0,0.9)]"
-                        onError={(e) => {
-                            e.currentTarget.style.display = 'none';
-                            const parent = e.currentTarget.parentElement;
-                            if (parent && !parent.querySelector('.logo-fallback')) {
-                                const fallback = document.createElement('div');
-                                fallback.className = 'logo-fallback mb-2 text-3xl sm:text-5xl font-extrabold tracking-widest text-white uppercase border-2 border-blue-600 px-6 py-2 rounded-xs';
-                                fallback.innerText = 'LOGOTYPE';
-                                parent.insertBefore(fallback, parent.firstChild);
-                            }
-                        }}
-                    />
+                    {!logoError ? (
+                        <Image
+                            src="/logo.png"
+                            alt="Rafting Elo Magelang - Arung Jeram Sungai Elo"
+                            width={400}
+                            height={160}
+                            priority
+                            className="h-36 sm:h-64 md:h-80 lg:h-96 w-auto object-contain mx-auto mb-2 brightness-0 invert drop-shadow-[0_10px_25px_rgba(0,0,0,0.9)]"
+                            onError={() => setLogoError(true)}
+                        />
+                    ) : (
+                        <div className="logo-fallback mb-2 text-3xl sm:text-5xl font-extrabold tracking-widest text-white uppercase border-2 border-blue-600 px-6 py-2 rounded-xs">
+                            LOGOTYPE
+                        </div>
+                    )}
                 </div>
             </div>
 
@@ -105,10 +116,13 @@ export default function Hero() {
                                 className="group relative min-h-[190px] sm:min-h-[290px] lg:min-h-[320px] flex flex-col justify-between p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-none border border-white/10 sm:border-0 sm:border-r sm:border-b-0 overflow-hidden cursor-pointer bg-[#141414] sm:bg-transparent"
                             >
                                 {/* Background Photo */}
-                                <img
+                                <Image
                                     src={card.bgImage}
                                     alt={card.badgeText}
-                                    className={`absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105 ${card.isGrayscale
+                                    fill
+                                    sizes="(max-width: 640px) 50vw, 25vw"
+                                    loading="lazy"
+                                    className={`object-cover object-center transition-transform duration-700 group-hover:scale-105 ${card.isGrayscale
                                         ? "grayscale brightness-[0.45] group-hover:grayscale-0 group-hover:brightness-[0.6]"
                                         : "brightness-[0.45] group-hover:brightness-[0.6]"
                                         }`}

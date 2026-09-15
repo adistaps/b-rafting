@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import Image from "next/image"
 import { BadgeCheck, Headphones, ShieldCheck } from "lucide-react"
 
 export default function About() {
@@ -26,22 +27,28 @@ export default function About() {
                     <div className="lg:col-span-7 grid grid-cols-12 gap-4 sm:gap-6 items-center">
                         {/* Foto Utama (Lebih Tinggi) */}
                         <div className="col-span-7 relative">
-                            <div className="aspect-[3/4] w-full overflow-hidden rounded-sm bg-gray-100 shadow-xl">
-                                <img
+                            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm bg-gray-100 shadow-xl">
+                                <Image
                                     src="/images/rafting-7.webp"
                                     alt="Rafting Sungai Elo"
-                                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                                    fill
+                                    sizes="(max-width: 1024px) 60vw, 30vw"
+                                    loading="lazy"
+                                    className="object-cover transition-transform duration-700 hover:scale-105"
                                 />
                             </div>
                         </div>
 
                         {/* Foto Sekunder (Offset Kebawah) */}
                         <div className="col-span-5 relative -mt-8 sm:-mt-12">
-                            <div className="aspect-[3/4] w-full overflow-hidden rounded-sm bg-gray-100 shadow-2xl ring-1 ring-black/5">
-                                <img
+                            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-sm bg-gray-100 shadow-2xl ring-1 ring-black/5">
+                                <Image
                                     src="/images/rafting-1.webp"
                                     alt="Aktivitas Arung Jeram"
-                                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                                    fill
+                                    sizes="(max-width: 1024px) 40vw, 20vw"
+                                    loading="lazy"
+                                    className="object-cover transition-transform duration-700 hover:scale-105"
                                 />
                             </div>
                         </div>

@@ -1,8 +1,8 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 
-const WA_NUMBER = "6285643671469";
+const WA_NUMBER = "6285159771469";
 const WA_MESSAGE = encodeURIComponent(
   "Halo Admin Elo Rafting \uD83D\uDC4B, saya ingin tanya info dan booking paket arung jeram. Mohon bantuannya ya!"
 );

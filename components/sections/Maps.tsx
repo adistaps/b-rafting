@@ -134,7 +134,7 @@ export default function Maps() {
                                 Senin – Minggu, 07:00 – 17:00 WIB
                             </p>
                             <a href="mailto:info@elorafting.com" className="text-gray-500 text-[11px] sm:text-xs md:text-sm font-medium hover:text-[#ccff00] transition-colors break-words block">
-                                +62 856-4367-1469 (Whastapp)
+                                +62 851-5977-1469 (WhatsApp)
                             </a>
                         </div>
                     </div>
