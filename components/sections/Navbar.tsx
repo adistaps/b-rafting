@@ -62,7 +62,7 @@ export default function Navbar() {
           className="flex items-center gap-2.5 py-1.5 transition-all hover:opacity-80"
         >
           <Image
-            src="/logob+.png"
+            src="/logob+.webp"
             alt="Rafting Elo Logo"
             width={140}
             height={44}

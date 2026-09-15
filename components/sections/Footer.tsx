@@ -26,7 +26,7 @@ export default function Footer() {
                         {/* Content Top */}
                         <div className="relative z-10 flex items-center gap-3">
                             <Image
-                                src="/logob+.png"
+                                src="/logob+.webp"
                                 alt="Rafting Elo Magelang Logo"
                                 width={120}
                                 height={36}

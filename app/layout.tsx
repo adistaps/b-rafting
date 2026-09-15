@@ -88,8 +88,8 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   icons: {
-    icon: '/logob+.png',
-    apple: '/logob+.png',
+    icon: '/logob+.webp',
+    apple: '/logob+.webp',
   },
   // GEO tags (injected via <head> through other: field isn't standard, use Script instead)
   other: {
@@ -123,7 +123,7 @@ const jsonLd = {
       currenciesAccepted: 'IDR',
       paymentAccepted: 'Cash, Transfer Bank',
       image: `${siteUrl}/images/rafting-1.webp`,
-      logo: `${siteUrl}/logob+.png`,
+      logo: `${siteUrl}/logob+.webp`,
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Desa Pare, Kranggan, Sudiropaten, Kec. Secang',

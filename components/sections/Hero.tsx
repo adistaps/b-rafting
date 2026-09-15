@@ -83,7 +83,7 @@ export default function Hero() {
                 <div className="relative z-10 max-w-4xl mx-auto text-center px-4 my-auto py-4 flex flex-col items-center">
                     {!logoError ? (
                         <Image
-                            src="/logo.png"
+                            src="/logo.webp"
                             alt="Rafting Elo Magelang - Arung Jeram Sungai Elo"
                             width={400}
                             height={160}
