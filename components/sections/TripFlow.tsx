@@ -11,6 +11,7 @@ const steps = [
     "Briefing & Pembagian Alat",
     "Mulai Mengarungi Jeram",
     "Rehat Kelapa Muda",
+    "Lanjut Mengarungi Jeram - Finish",
     "Kembali ke Meeting Point",
 ] as const;
 
@@ -21,9 +22,11 @@ const cardRotations = [
     "-rotate-1",
     "rotate-1",
     "-rotate-2",
+    "rotate-1",
 ];
 
 const cardThemes: ("mono")[] = [
+    "mono",
     "mono",
     "mono",
     "mono",
@@ -86,7 +89,7 @@ export default function TripFlow() {
                     {/* CARDS CONTAINER (Horizontal Snap Scroll di HP, Grid 6 Kolom di Desktop) */}
                     <div
                         ref={scrollRef}
-                        className="flex lg:grid lg:grid-cols-6 gap-3 overflow-x-auto lg:overflow-x-visible snap-x snap-mandatory scrollbar-none py-4 px-1"
+                        className="flex lg:grid lg:grid-cols-7 gap-3 overflow-x-auto lg:overflow-x-visible snap-x snap-mandatory scrollbar-none py-4 px-1"
                     >
                         {steps.map((step, i) => (
                             <div

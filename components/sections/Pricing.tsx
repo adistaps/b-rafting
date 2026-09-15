@@ -180,7 +180,7 @@ export default function Pricing() {
                 <div className="mt-4 flex flex-col justify-between gap-3 border border-white/20 bg-white/10 p-5 backdrop-blur-md sm:flex-row sm:items-center">
                     <div>
                         <p className="text-sm font-bold uppercase tracking-wider text-white">Video Dokumentasi</p>
-                        <p className="text-xs text-gray-300">Abadikan seluruh momen seru dari start hingga finish.</p>
+                        <p className="text-xs text-gray-300">Abadikan momen seru anda dengan video dokumentasi agar lebih bermakna</p>
                     </div>
                     <p className="text-base font-black text-[#ccff00]">mulai Rp300.000</p>
                 </div>

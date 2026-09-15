@@ -19,8 +19,8 @@ const CARDS_DATA = [
         isGrayscale: false,
     },
     {
-        titleLines: ["3 JAM", "TRIP"],
-        badgeText: "3 jam trip",
+        titleLines: ["±3 JAM", "TRIP"],
+        badgeText: "±3 jam trip",
         subtext: "DURASI STANDAR",
         icon: Clock3,
         bgImage: "/images/rafting-2.webp",

@@ -70,7 +70,7 @@ export default function Navbar() {
             className={`hidden text-xm font-black uppercase leading-tight tracking-tight sm:block transition-colors duration-300 ${isOverDarkSection ? "text-white" : "text-[#0b192c]"
               }`}
           >
-            Rafting Elo
+            Elorafting.id
           </span>
         </a>
 

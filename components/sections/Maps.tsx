@@ -18,9 +18,9 @@ const mapPins = [
         id: 1,
         x: 75, // Indonesia / Magelang area
         y: 65,
-        title: 'Elo Rafting Main Basecamp',
-        address: 'Sungai Elo, Blondo, Mungkid, Magelang, Jawa Tengah',
-        mapUrl: 'https://maps.google.com/?q=Sungai+Elo+Rafting+Magelang',
+        title: 'EloRafting.id Check Point Basecamp',
+        address: 'Jl. Sendangsono No.KM 0, RW.5, Magelang, 56512, Jawa Tengah, ID',
+        mapUrl: 'https://maps.app.goo.gl/MDtjdvCEBRpWwCbk7',
         image: '/hero-rafting.jpg'
     },
 ]
@@ -123,7 +123,7 @@ export default function Maps() {
                                 Lokasi Kami
                             </strong>
                             <p className="text-gray-500 text-xs sm:text-sm leading-relaxed max-w-[220px]">
-                                Sungai Elo, Blondo, Mungkid, Magelang, Jawa Tengah
+                                Jl. Sendangsono No.KM 0, RW.5, Magelang, 56512, Jawa Tengah, ID
                             </p>
                         </div>
                         <div>
@@ -134,7 +134,7 @@ export default function Maps() {
                                 Senin – Minggu, 07:00 – 17:00 WIB
                             </p>
                             <a href="mailto:info@elorafting.com" className="text-gray-500 text-[11px] sm:text-xs md:text-sm font-medium hover:text-[#ccff00] transition-colors break-words block">
-                                info@elorafting.com
+                                +62 856-4367-1469 (Whastapp)
                             </a>
                         </div>
                     </div>
