@@ -67,9 +67,6 @@ export default function Pricing() {
                 {/* Header Section */}
                 <div className="mb-8 sm:mb-14 flex flex-col justify-between gap-4 md:flex-row md:items-end">
                     <div>
-                        <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#ccff00]">
-                            Pilih petualanganmu
-                        </p>
                         <h2 className="mt-2 text-3xl font-black uppercase tracking-tight text-white sm:text-4xl lg:text-5xl leading-tight">
                             Paket rafting untuk<br />
                             <span className="text-[#ccff00]">setiap cerita.</span>

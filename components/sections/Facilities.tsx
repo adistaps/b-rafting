@@ -68,9 +68,6 @@ export default function Facilities() {
         <section id="fasilitas" className="w-full bg-white overflow-hidden select-none">
             {/* Header Section: Background Putih Polos, Font Hitam */}
             <div className="w-full bg-white px-5 sm:px-8 lg:px-12 py-10 text-left border-b border-neutral-200">
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-neutral-500 mb-2">
-                    Fasilitas Lengkap
-                </p>
                 <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-black">
                     Semua Kebutuhan Tersedia
                 </h2>

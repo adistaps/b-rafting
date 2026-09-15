@@ -106,20 +106,6 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        {/* Newsletter Input Box */}
-                        <div className="pt-8 border-t border-neutral-200">
-                            <h4 className="text-xs font-bold uppercase tracking-widest text-neutral-900 mb-3">Newsletter</h4>
-                            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col sm:flex-row gap-3 max-w-md">
-                                <input
-                                    type="email"
-                                    placeholder="Masukkan email kamu..."
-                                    className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3.5 text-xs font-medium text-neutral-900 outline-none focus:border-neutral-900 transition-colors placeholder:text-neutral-400"
-                                />
-                                <Button type="submit" size="default" className="rounded-xl bg-[#0b192c] text-white hover:bg-[#152a47] text-xs font-bold uppercase tracking-wider px-6 py-3.5">
-                                    Submit
-                                </Button>
-                            </form>
-                        </div>
 
                     </div>
 

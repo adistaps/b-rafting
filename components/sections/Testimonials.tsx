@@ -23,9 +23,6 @@ export default function Testimonials() {
 
             {/* Header */}
             <div className="mx-auto max-w-7xl px-5 lg:px-8 mb-12">
-                <p className="text-xs font-bold uppercase tracking-[0.25em] text-neutral-400 mb-2">
-                    Cerita Mereka
-                </p>
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-neutral-900 leading-tight">
                     Pulang membawa<br />
                     <span className="text-neutral-400">cerita baru.</span>

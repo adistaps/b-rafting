@@ -52,9 +52,6 @@ export default function TripFlow() {
                     {/* Header Section (Polos Tanpa Background Box) */}
                     <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
                         <div>
-                            <p className="text-xs font-bold uppercase tracking-[0.25em] text-neutral-500">
-                                Dari start sampai finish
-                            </p>
                             <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-black leading-tight">
                                 Begini alur<br />
                                 petualanganmu.

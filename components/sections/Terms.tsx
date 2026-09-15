@@ -13,9 +13,6 @@ export default function Terms() {
             <div className="mx-auto max-w-7xl px-5 lg:px-8">
                 {/* Header Section */}
                 <div className="mb-12">
-                    <p className="text-xs font-bold uppercase tracking-[0.25em] text-neutral-400">
-                        Sebelum berangkat
-                    </p>
                     <h2 className="mt-2 text-3xl font-black uppercase tracking-tight text-neutral-900 sm:text-4xl lg:text-5xl leading-tight">
                         Biar trip tetap<br />
                         <span className="text-neutral-400">aman & nyaman.</span>
